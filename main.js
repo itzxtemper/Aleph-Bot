@@ -13,7 +13,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Aleph is online');
-    client.user.setActivity('Hi I am new here!', {type: "WATCHING"});
+    client.user.setActivity('FUCKING VORTEX MOM!', {type: "PLAYING"});
 });
 
 client.on('message', message => {
@@ -235,7 +235,7 @@ else if(command==='users')
 else if(command==='unban')
 {
 if(!message.member.hasPermission("BAN_MEMBERS")) {
-    return message.channel.send(`Bruh, get some permissions first`)
+    return message.channel.send(`NOPE`)
   }
   
   if(!message.guild.me.hasPermission("BAN_MEMBERS")) {
@@ -243,11 +243,11 @@ if(!message.member.hasPermission("BAN_MEMBERS")) {
   }
   
   let userID = args[0]
-  if(!args[0])return message.channel.send("Do that again but this time mention the person you wanna unban ")
+  if(!args[0])return message.channel.send("FUCK U  ")
     message.guild.fetchBans().then(bans=> {
     if(bans.size == 0) return 
     let bUser = bans.find(b => b.user.id == userID)
-    if(!bUser) return message.channel.send("Hey, That user isn't even banned")
+    if(!bUser) return message.channel.send("FUCK ME HARDER BY - VORTEX ")
     message.guild.members.unban(bUser.user) 
     message.channel.send(`Unbanned ${bUser.user.username}`)
    
@@ -259,4 +259,4 @@ else if(command==='addrole'){
 
 
 
-client.login('TOKEN');
+client.login('Token');
